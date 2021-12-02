@@ -13,6 +13,7 @@ This site allows users to ask and answer any question that they find interesting
 <img src="wireframes/Home.png" alt="home">
 <img src="wireframes/Mobile.png" alt="mobile">
 <img src="wireframes/question.png" alt="question">
+<img src="wireframes/Reply.png" alt="reply">
 <img src="wireframes/guidelines.png" alt="guidelines">
 
 ## Component Hierarchy
@@ -61,13 +62,13 @@ This site allows users to ask and answer any question that they find interesting
 - Create home page with functional routes.
 - Allow users to reply to questions from the home page.
 - Allow users to create their own questions.
-- Create functionality for buttons/icons.
 - Create a page with a list of guidelines.
 
 #### PostMVP
 
 - Create a page for a daily vote. This would require a second airtable api.
 - Add additional styling.
+- Create functionality for buttons/icons.
 
 ## Project Schedule
 
