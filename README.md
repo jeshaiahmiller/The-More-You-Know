@@ -55,8 +55,6 @@ This site allows users to ask and answer any question that they find interesting
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MVP and PostMVP. Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.
-
 #### MVP
 
 - Use Airtable to create and render API.
