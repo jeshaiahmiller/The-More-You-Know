@@ -1,8 +1,7 @@
 import './App.css';
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { getQuestions, }  from './services'
 import { Routes, Route, Link } from 'react-router-dom'
-import Questions from './components/Questions'
 import Navbar from './components/Navbar'
 import Guidelines from './components/Guidelines'
 import Form from './components/Form'
@@ -22,7 +21,7 @@ function App() {
     grabQuestions()
   }, [toggle])
   if (QA.length === 0) {
-    return (<h3>Loading...</h3>)
+    return (<h3 className="loading">Loading...</h3>)
   }
 
 
@@ -36,9 +35,9 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={ QA.map((question) => (
-            <>
-            <Question QA={question} setToggle={setToggle} />
-            </>
+            <React.Fragment key={ question.id }>
+            <Question  QA={question} setToggle={setToggle} />
+            </React.Fragment>
           ))}/>
         <Route path='/ask/:id' element={<Form setToggle={setToggle} />} />
         <Route path="/guidelines" element={<Guidelines />} />

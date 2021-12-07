@@ -1,16 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
 import { postQuestion } from '../services'
 import {useNavigate} from 'react-router-dom'
 
 export default function Form(props) {
 
-  const [ask, setAsk] = useState('')
-  const [askAuthor, setAskAuthor] = useState('')
+
   const [question, setQuestion] = useState('')
-  const [author, setauthor] = useState('')
-  const [toggle, setToggle] = useState(false)
+  const [author, setAuthor] = useState('')
   const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
@@ -20,7 +17,7 @@ export default function Form(props) {
       author
     }
     
-      const response = await postQuestion(newQuestion)
+    const response = await postQuestion(newQuestion)
     props.setToggle(prevToggle => !prevToggle)
     console.log(response)
       if (response) {
@@ -32,8 +29,8 @@ export default function Form(props) {
     return (
       <div>
         <form className="ask" onSubmit={handleSubmit}>
-          <input className="ask-input" value={ask} placeholder="Ask a Question" onChange={(e) => setAsk(e.target.value)} />
-          <input className="ask-input" value={askAuthor} placeholder="Your Name" onChange={(e) => setAskAuthor(e.target.value)} />
+          <input className="ask-input" value={question} placeholder="Ask a Question" onChange={(e) => setQuestion(e.target.value)} />
+          <input className="ask-input" value={author} placeholder="Your Name" onChange={(e) => setAuthor(e.target.value)} />
           <button className="ask-button" type="submit">Submit!</button>
         
 
