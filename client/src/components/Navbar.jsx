@@ -3,13 +3,11 @@ import {Link} from 'react-router-dom'
 
 export default function Navbar() {
   return (
-    <div>
-    <div>
-      <Link to='/ask/:id'>Ask Away!</Link>
-      </div>
-    <div>
-      <Link to='/guidelines'>Guidelines</Link>
-    </div>
+    <div className="navbar">
+  
+      <Link to='/ask/:id' className="link1">Ask Away!</Link>
+      <Link to='/guidelines' className="link2">Guidelines</Link>
+  
     </div>
   )
 

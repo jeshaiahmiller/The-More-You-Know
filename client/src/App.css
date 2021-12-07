@@ -7,3 +7,43 @@
   font-size: 40px;
   font-weight: bold;
 }
+.ask {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 200px;
+}
+.ask-input {
+  margin: 20px;
+  width: 300px;
+  text-align: center;
+}
+.ask-button {
+  width: 120px;
+  margin: 20px;
+}
+.link1,
+.link2 {
+  margin: 10px 100px;
+  border: 2px solid lightblue;
+  text-decoration: none;
+  color: black;
+  background-color: lightblue;
+}
+.header {
+  margin-top: -10px;
+  margin-bottom: 15px;
+  background-color: lightblue;
+  height: 100px;
+  padding-top: 20px;
+}
+.navbar {
+  margin-bottom: 100px;
+}
+.question {
+  border: 2px solid lightblue;
+  width: 75%;
+  margin-bottom: 80px;
+  margin-left: 30px;
+}

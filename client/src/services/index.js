@@ -16,3 +16,7 @@ export const getQuestions = async () => {
   const response = await axios.get(URL, config)
   return response.data.records
 }
+export const postQuestion = async (body) => {
+  const response = await axios.post(URL, { fields: body }, config)
+  return response.data
+}
