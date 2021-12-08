@@ -30,8 +30,8 @@ export default function QuestionDetail({setQuestion, setToggle, question, answer
       <h1>{question.fields.question}</h1>
       <AnswerForm id={id} setToggle={setToggle}/>
       {questionAnswers.map((answer) => (
-        <div>
-          <p>{answer.fields.answers}</p>
+        <div key={answer.fields.answers} className="answer">
+          <p key={answer.answers}>{answer.fields.answers}</p>
         </div>
       ))}
     </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export default function Question(props) {
   // console.log(props.QA)
   if (!props.QA) {
@@ -14,8 +15,8 @@ export default function Question(props) {
           <h3>{props.QA.fields.question}</h3>
           <p>{props.QA.fields.author}</p>
           </div>
-      </>
-      }
+        </>
+        }
       </div>
       </div>
 

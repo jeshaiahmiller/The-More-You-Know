@@ -4,10 +4,11 @@ import Question from '../components/Question'
 
 export default function Questions({ QA }) {
 
- 
+
   
   return (
     <div>
+  
       {QA.map((question) => (
         <React.Fragment key={question.id}>
           <Link to={`/questions/${question.id}`}>
@@ -15,6 +16,9 @@ export default function Questions({ QA }) {
           </Link>
         </React.Fragment>
       ))}
+    
     </div>
+
+
   )
 }
