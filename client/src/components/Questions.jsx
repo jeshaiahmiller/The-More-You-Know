@@ -1,19 +1,20 @@
-// import React from 'react'
-// import { useState, useEffect } from 'react'
-// // import Question from './components/Question'
+import React from 'react'
+import {Link} from 'react-router-dom'
+import Question from '../components/Question'
 
+export default function Questions({ QA }) {
 
-// export default function Questions(props) {
-
-//   // const [questions, setQuestions] = useState('')
-//   const [toggle, setToggle] = useState(false)
-//   return (
-//     <div>
-//       {/* {props.QA.map((question) => (
-//             <>
-//             <Question QA={question} setToggle={setToggle} />
-//             </>
-//           ))}  */}
-//     </div>
-//   )
-// }
+ 
+  
+  return (
+    <div>
+      {QA.map((question) => (
+        <React.Fragment key={question.id}>
+          <Link to={`/questions/${question.id}`}>
+            <Question QA={question} />
+          </Link>
+        </React.Fragment>
+      ))}
+    </div>
+  )
+}

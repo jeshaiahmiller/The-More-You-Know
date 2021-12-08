@@ -1,50 +1,55 @@
-import './App.css';
-import React, { useEffect, useState } from 'react'
-import { getQuestions, }  from './services'
-import { Routes, Route, Link } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Guidelines from './components/Guidelines'
-import Form from './components/Form'
-import Question from './components/Question'
-function App() {
+import "./App.css";
+import React, { useEffect, useState } from "react";
+import { getQuestions, getAnswers } from "./services";
+import { Routes, Route, Link } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Guidelines from "./components/Guidelines";
+import Form from "./components/Form";
+import QuestionDetail from "./components/QuestionDetail";
+import Questions from './components/Questions'
 
-  const [QA, setQA] = useState([])
-  const [toggle, setToggle] = useState(false)
-  
+function App() {
+  const [QA, setQA] = useState([]);
+  const [answers, setAnswers] = useState([])
+  const [question, setQuestion] = useState(null)
+  const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
     const grabQuestions = async () => {
-      const res = await getQuestions()
-      setQA(res)
-      console.log(res)
-    }
-    grabQuestions()
-  }, [toggle])
+      const res = await getQuestions();
+      const res2 = await getAnswers();
+      setQA(res);
+      setAnswers(res2)
+    };
+    grabQuestions();
+  }, [toggle]);
+  
   if (QA.length === 0) {
-    return (<h3 className="loading">Loading...</h3>)
+    return <h3 className="loading">Loading...</h3>;
   }
-
 
   return (
     <div className="App">
-      <div className="header"> <br />
-        <Link to="/" className="title">The More You Know</Link>
-        </div>
+      <div className="header">
+        
+        <br />
+        <Link to="/" className="title">
+          The More You Know
+        </Link>
+      </div>
       <div>
         <Navbar />
       </div>
       <Routes>
-        <Route path="/" element={ QA.map((question) => (
-            <React.Fragment key={ question.id }>
-            <Question  QA={question} setToggle={setToggle} />
-            </React.Fragment>
-          ))}/>
-        <Route path='/ask/:id' element={<Form setToggle={setToggle} />} />
+        <Route
+          path="/"
+          element={<Questions QA={QA}/>}
+        />
+        <Route path="/ask" element={<Form setToggle={setToggle} />} />
         <Route path="/guidelines" element={<Guidelines />} />
+        <Route path="/questions/:id" element={<QuestionDetail setQuestion={setQuestion} setToggle={setToggle} question={question} answers={answers}/>} />
       </Routes>
-    <div>
-  
-    </div>
+      <div></div>
     </div>
   );
 }
