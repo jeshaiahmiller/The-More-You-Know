@@ -41,7 +41,8 @@
 .navbar {
   margin-bottom: 100px;
 }
-.question {
+.question,
+.answer {
   border: 2px solid lightblue;
   width: 75%;
   margin-bottom: 80px;
@@ -51,4 +52,14 @@
   font-size: 50px;
   color: red;
   text-align: center;
+}
+.question-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 2px solid red;
+  width: 75%;
+  margin-bottom: 80px;
+  /* margin-left: 180px; */
 }

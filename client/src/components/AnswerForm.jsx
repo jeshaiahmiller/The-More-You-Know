@@ -4,12 +4,15 @@ import { postAnswer } from "../services";
 // import { useNavigate } from "react-router-dom";
 
 export default function Form({ id, setToggle }) {
+  const [author, setAuthor] = useState('')
   const [answers, setAnswers] = useState("");
+  
   // const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newAnswer = {
+      author,
       answers,
     };
 
@@ -24,6 +27,12 @@ export default function Form({ id, setToggle }) {
   return (
     <div>
       <form className="ask" onSubmit={handleSubmit}>
+        <input
+          className="ask-input"
+          value={author}
+          placeholder="Name"
+          onChange={(e) => setAuthor(e.target.value)}
+        />
         <input
           className="ask-input"
           value={answers}
