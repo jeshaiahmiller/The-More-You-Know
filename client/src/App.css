@@ -41,8 +41,7 @@
 .navbar {
   margin-bottom: 100px;
 }
-.question,
-.answer {
+.question {
   border: 2px solid lightblue;
   width: 75%;
   margin-bottom: 80px;
@@ -54,12 +53,23 @@
   text-align: center;
 }
 .question-detail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  border: 2px solid red;
-  width: 75%;
+  border: 5px solid red;
   margin-bottom: 80px;
-  /* margin-left: 180px; */
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.answer {
+  border: 5px solid lightblue;
+  margin-bottom: 80px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.single {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.display-question {
+  color: black;
+  text-decoration: none;
 }

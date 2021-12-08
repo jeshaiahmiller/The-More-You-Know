@@ -28,15 +28,15 @@ export default function QuestionDetail({setQuestion, setToggle, question, answer
   return (
     <div>
     <div className="question-detail">
-      <h3>{question.fields.question}</h3>
-      <h4>{question.fields.author}</h4>
+      <h3 className="single">{question.fields.question}</h3>
+      <h4 className="single">{question.fields.author}</h4>
       </div>
     
       
       {questionAnswers.map((answer) => (
         <div key={answer.fields.answers} className="answer">
-          <h3 key={answer.author}>{answer.fields.author}</h3>
-          <p key={answer.answers}>{answer.fields.answers}</p>
+          <h3 key={answer.author} className="single">{answer.fields.author}</h3>
+          <p key={answer.answers} className="single">{answer.fields.answers}</p>
         </div>
         
       ))}
