@@ -72,15 +72,15 @@ This site allows users to ask and answer any question that they find interesting
 
 ## Project Schedule
 
-| Day     | Deliverable                                            | Status     |
-| ------- | ------------------------------------------------------ | ---------- |
-| Dec 1   | Prompt / Wireframes / Component Hierarchy / Timeframes | Complete   |
-| Dec 2   | Project Approval                                       | Incomplete |
-| Dec 3-4 | Core Application Structure (HTML, CSS, etc.)           | Incomplete |
-| Dec 3-5 | Pseudocode / actual code / API                         | Incomplete |
-| Dec 6-7 | Initial Clickable Model                                | Incomplete |
-| Dec 8   | MVP                                                    | Incomplete |
-| Dec 9   | Presentations                                          | Incomplete |
+| Day     | Deliverable                                            | Status   |
+| ------- | ------------------------------------------------------ | -------- |
+| Dec 1   | Prompt / Wireframes / Component Hierarchy / Timeframes | Complete |
+| Dec 2   | Project Approval                                       | complete |
+| Dec 3-4 | Core Application Structure (HTML, CSS, etc.)           | complete |
+| Dec 3-5 | Pseudocode / actual code / API                         | complete |
+| Dec 6-7 | Initial Clickable Model                                | complete |
+| Dec 8   | MVP                                                    | complete |
+| Dec 9   | Presentations                                          | complete |
 
 ## Timeframes
 
@@ -99,7 +99,8 @@ This site allows users to ask and answer any question that they find interesting
 | Guidelines styling    |    H     |      2hrs      |     2hrs      |    2hrs     |
 | responsive design     |    H     |      2hrs      |     2hrs      |    2hrs     |
 | Routes/Links          |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Total                 |    H     |     32hrs      |     32hrs     |    32hrs    |
+| Associations          |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Total                 |    H     |     34hrs      |     34hrs     |    34hrs    |
 
 ## SWOT Analysis
 
