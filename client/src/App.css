@@ -47,7 +47,7 @@ body {
   margin-top: -10px;
   margin-bottom: 15px;
   /* background-color: lightblue; */
-  height: 100px;
+  height: 110px;
   padding-top: 20px;
   background-image: url("https://images2.alphacoders.com/438/438076.jpg");
   background-size: 35%;
@@ -112,4 +112,32 @@ h4 {
   height: 450px;
   right: 20px;
   top: 305px;
+}
+.scroll {
+  width: 100px;
+  height: 30px;
+}
+button:hover {
+  background-color: red;
+  color: white;
+}
+@media (max-width: 1250px) {
+  img {
+    display: none;
+  }
+  .question-detail,
+  .answer {
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+}
+@media (max-width: 569px) {
+  .link1 {
+    margin: 10px 50px;
+    border: 2px solid red;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+  }
 }
