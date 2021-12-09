@@ -8,7 +8,7 @@ export default function Question(props) {
   }
   return (
     <div>
-    <div key={props.QA.id}>
+    <div className="link" key={props.QA.id}>
       {props.QA && props.QA.fields.question && props.QA.fields &&
           <>
           <div className="question">

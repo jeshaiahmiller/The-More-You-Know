@@ -11,9 +11,11 @@ export default function Questions({ QA }) {
   
       {QA.map((question) => (
         <React.Fragment key={question.id}>
+          <div className="map">
           <Link to={`/questions/${question.id}`}>
             <Question QA={question} />
           </Link>
+          </div>
         </React.Fragment>
       ))}
     

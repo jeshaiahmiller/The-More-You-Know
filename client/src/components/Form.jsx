@@ -29,8 +29,8 @@ export default function Form(props) {
     return (
       <div>
         <form className="ask" onSubmit={handleSubmit}>
+        <input className="author-input" value={author} placeholder="Your Name" onChange={(e) => setAuthor(e.target.value)} />
           <input className="ask-input" value={question} placeholder="Ask a Question" onChange={(e) => setQuestion(e.target.value)} />
-          <input className="ask-input" value={author} placeholder="Your Name" onChange={(e) => setAuthor(e.target.value)} />
           <button className="ask-button" type="submit">Submit!</button>
         
 

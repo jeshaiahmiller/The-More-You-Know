@@ -28,7 +28,7 @@ export default function Form({ id, setToggle }) {
     <div>
       <form className="ask" onSubmit={handleSubmit}>
         <input
-          className="ask-input"
+          className="author-input"
           value={author}
           placeholder="Name"
           onChange={(e) => setAuthor(e.target.value)}
