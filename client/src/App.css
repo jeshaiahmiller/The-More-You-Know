@@ -69,14 +69,14 @@ body {
 .question-detail {
   border: 5px solid lightblue;
   margin-bottom: 10px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 350px;
+  margin-right: 350px;
 }
 .answer {
   border: 5px solid red;
   margin-bottom: 10px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 350px;
+  margin-right: 350px;
   margin-top: 80px;
 }
 .single {
@@ -89,26 +89,13 @@ body {
   color: white;
   text-decoration: underline black;
 }
-/* .thumbicons {
-  display: flex;
-} */
-.thumbup {
-  margin-right: 20px;
-  margin-left: -1000px;
-}
-.flag {
-  display: flex;
-  margin-left: 20px;
-}
+
 .Answertitle {
   font-size: 50px;
   color: red;
+  margin-top: 200px;
 }
-/* .answerthumbicons {
-  display: flex;
-}
-.answerflag {
-}  */
+
 li,
 h3,
 h2,
@@ -118,10 +105,11 @@ h4 {
 .guidelines {
   font-size: 150%;
 }
-.ask {
-  display: flex;
-  justify-content: center;
-  border: 5px solid red;
-  height: 500px;
-  margin-top: 50px;
+
+.questionmark {
+  position: absolute;
+  width: 350px;
+  height: 450px;
+  right: 20px;
+  top: 305px;
 }

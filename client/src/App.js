@@ -40,6 +40,8 @@ function App() {
       <div>
         <Navbar />
       </div>
+      <img className="questionmark" src="http://clipart-library.com/images_k/animated-transparent-gifs/animated-transparent-gifs-5.png" alt="Q-mark"/>
+
       <Routes>
         <Route
           path="/"
@@ -49,7 +51,8 @@ function App() {
         <Route path="/guidelines" element={<Guidelines />} />
         <Route path="/questions/:id" element={<QuestionDetail setQuestion={setQuestion} setToggle={setToggle} question={question} answers={answers}/>} />
       </Routes>
-      <div></div>
+      <div>
+      </div>
     </div>
   );
 }
