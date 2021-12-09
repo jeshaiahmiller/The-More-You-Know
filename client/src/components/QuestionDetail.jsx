@@ -2,15 +2,14 @@ import {useState, useEffect} from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { getQuestion } from '../services'
 import AnswerForm from './AnswerForm'
-// import { useRef } from "react"
+
 
 
 export default function QuestionDetail({ setQuestion, setToggle, question, answers }) {
 
   const [questionAnswers, setQuestionAnswers] = useState([])
   const { id } = useParams()
-  const navigate = useNavigate()
-  // const ServicesRef = useRef(null)
+  
   
   
   
@@ -63,4 +62,3 @@ export default function QuestionDetail({ setQuestion, setToggle, question, answe
     
     )
   }
-// }

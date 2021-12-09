@@ -2,7 +2,6 @@ import React from 'react'
 
 
 export default function Question(props) {
-  // console.log(props.QA)
   if (!props.QA) {
     return <p></p>
   }
