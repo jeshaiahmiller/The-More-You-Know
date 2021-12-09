@@ -2,7 +2,7 @@
 
 ## Project Name
 
-The More You Know
+[The More You Know](https://the-more-you-know.netlify.app)
 
 ## Project Description
 
