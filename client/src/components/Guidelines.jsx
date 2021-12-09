@@ -7,7 +7,7 @@ export default function Guidelines(props) {
       <h3>Guidelines</h3><br />
     </div>
       <div>
-        <h4>This is a friendly site that will enable your curios side! Ask any question you find interesting. </h4>
+        <h4>This is a friendly site that will show your curious side! Ask any question you find interesting. </h4>
         
           <li>Please refrain from any inappropriate language or questions.</li> <br />
           <li>Use your knowledge to inform people, not bring them down.</li> <br />
