@@ -40,8 +40,6 @@ function App() {
       <div>
         <Navbar />
       </div>
-      <img className="questionmark" src="http://clipart-library.com/images_k/animated-transparent-gifs/animated-transparent-gifs-5.png" alt="Q-mark"/>
-
       <Routes>
         <Route
           path="/"
